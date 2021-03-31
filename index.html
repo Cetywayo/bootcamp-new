@@ -1,0 +1,48 @@
+<script src="greet.js"></script>
+<script src="test/greet.tests.js"></script>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    
+    </head>
+    <body>
+        <!-- -->
+        <div id="mocha"></div>
+        <script>
+            // the mocha test style to use - we use BDD - Behviour Driven Development
+            mocha.setup('bdd');
+            //ensure the assert function is available
+            var assert = chai.assert;
+        </script>
+    
+        <!-- the function to be tested -->
+        <script src="./functions/greet.js" charset="utf-8"></script>
+        <!-- followed by the tests -->
+        <script src="./Test/greet.test.js" charset="utf-8"></script>
+
+        <script src=" ./functions/isFromBellville.js" class="utf-8"></script>
+        <script src=" ./Test/isFromBellville.test.js" charset="utf-8"></script>
+        
+        <script src=" ./functions/regCheck.js" class="utf-8"></script>
+        <script src=" ./Test/regCheck.test.js" charset="utf-8"></script>
+
+        <script src=" ./functions/isFromCapeTown.js" class="utf-8"></script>
+        <script src=" ./Test/isFromCapeTown.test.js" charset="utf-8"></script>
+
+        <script src=" ./functions/isWeekday.js" class="utf-8"></script>
+        <script src=" ./Test/isWeekday.test.js" charset="utf-8"></script>
+
+        
+
+        <script>
+
+      
+
+            <!-- configure and run mocha -->
+            mocha.checkLeaks();
+            mocha.run();
+        </script>
+    </body>
