@@ -11,4 +11,9 @@ describe('countRegNumber', function(){
         
     });
 
+    it('should count  the total number of registration numbers and return 2', function(){
+        assert.equal(2, countRegNumber('CJ 812328, CJ 234567'));
+        
+    });
+
 });
